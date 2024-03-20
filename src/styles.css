@@ -2,6 +2,7 @@
 body {
   background-color: #b9540c;
   overflow: hidden;
+  border: 1px solid black;
 }
 .characters-list {
   flex-wrap: nowrap;

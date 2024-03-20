@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CharactersComponent } from './characters/characters.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'got-root',
   standalone: true,
-  imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+    <header>
+      <h1>Welcome to {{ title }}!</h1>
+    </header>
+    <main>
+      <got-characters />
+    </main>
+    <footer></footer>
   `,
   styles: [],
+  imports: [RouterOutlet, CharactersComponent],
 })
 export class AppComponent {
   title = 'w04challange03';

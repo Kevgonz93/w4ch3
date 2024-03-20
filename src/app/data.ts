@@ -1,4 +1,4 @@
-[
+export const character = () => [
   {
     isAlive: true,
     message: "You're all to die!",
